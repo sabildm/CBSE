@@ -1,11 +1,14 @@
 package dk.sdu.mmmi.cbse.gamestates;
 
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.MathUtils;
+import dk.sdu.mmmi.cbse.entities.Bullet;
 import dk.sdu.mmmi.cbse.entities.Enemy;
 import dk.sdu.mmmi.cbse.entities.Player;
 import dk.sdu.mmmi.cbse.managers.GameKeys;
 import dk.sdu.mmmi.cbse.managers.GameStateManager;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class PlayState extends GameState {
@@ -15,6 +18,8 @@ public class PlayState extends GameState {
 	private Player player;
 
 	private Enemy enemy;
+
+	private ArrayList<Bullet> bullets;
 
 	
 	public PlayState(GameStateManager gsm) {
@@ -27,7 +32,9 @@ public class PlayState extends GameState {
 		
 		player = new Player();
 
-		enemy = new Enemy();
+		bullets = new ArrayList<Bullet>();
+
+		enemy = new Enemy(bullets);
 		
 	}
 	
@@ -35,16 +42,36 @@ public class PlayState extends GameState {
 		
 		handleInput();
 		enemyInput();
-		
+
+		// Update player
 		player.update(dt);
 
+		// update enemy
 		enemy.update(dt);
+
+		// Update enemy bullets
+		for (int i = 0; i < bullets.size(); i++) {
+			bullets.get(i).update(dt);
+			if(bullets.get(i).shouldRemoveBullet()){
+				bullets.remove(i);
+				i--;
+			}
+		}
 		
 	}
 	
 	public void draw() {
+		// draw player
 		player.draw(sr);
+
+		// draw enemy
 		enemy.draw(sr);
+
+		//draw enemy bullets
+		for (int i = 0; i < bullets.size(); i++) {
+			bullets.get(i).draw(sr);
+		}
+
 	}
 	
 	public void handleInput() {
@@ -56,7 +83,7 @@ public class PlayState extends GameState {
 
 	public void enemyInput(){
 		Random rand = new Random();
-		int random = rand.nextInt(4);
+		int random = rand.nextInt(5);
 
 		if (random == 0){
 			enemy.setUp(true);
@@ -70,7 +97,10 @@ public class PlayState extends GameState {
 			enemy.setUp(false);
 			enemy.setRight(false);
 			enemy.setLeft(true);
+		} else if (random == 4){
+			enemy.shoot();
 		}
+
 	}
 	
 	public void dispose() {}
