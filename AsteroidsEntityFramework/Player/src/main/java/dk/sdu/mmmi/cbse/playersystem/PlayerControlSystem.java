@@ -52,8 +52,8 @@ public class PlayerControlSystem implements IEntityProcessingService {
         shapex[1] = (float) (x + Math.cos(radians - 4 * 3.1415f / 5) * 8);
         shapey[1] = (float) (y + Math.sin(radians - 4 * 3.1145f / 5) * 8);
 
-        shapex[2] = (float) (x + Math.cos(radians + 3.1415f) * 5);
-        shapey[2] = (float) (y + Math.sin(radians + 3.1415f) * 5);
+        shapex[2] = (float) (x + Math.cos(radians + 3.1415f) * 3);
+        shapey[2] = (float) (y + Math.sin(radians + 3.1415f) * 3);
 
         shapex[3] = (float) (x + Math.cos(radians + 4 * 3.1415f / 5) * 8);
         shapey[3] = (float) (y + Math.sin(radians + 4 * 3.1415f / 5) * 8);
