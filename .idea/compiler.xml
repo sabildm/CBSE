@@ -10,6 +10,7 @@
         <module name="AsteroidsLibGDX" />
         <module name="Core (1) (dk.sdu.mmmi.cbse)" />
         <module name="Enemy (1)" />
+        <module name="Asteroids" />
         <module name="Bullet" />
         <module name="Common (1)" />
       </profile>
@@ -20,6 +21,7 @@
       <module name="Asteroid" target="1.9" />
       <module name="Asteroid (1)" target="1.9" />
       <module name="Asteroid (2)" target="1.5" />
+      <module name="Asteroids" target="17" />
       <module name="asteroids.java9" target="1.9" />
       <module name="asteroids.serviceloader" target="1.9" />
       <module name="AsteroidsEntityFramework" target="11" />

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Asteroids/Asteroids.iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Asteroids/Asteroids.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/AsteroidsEntityFramework.iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/AsteroidsEntityFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsLibGDX/AsteroidsLibGDX.iml" filepath="$PROJECT_DIR$/AsteroidsLibGDX/AsteroidsLibGDX.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Bullet/Bullet.iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Bullet/Bullet.iml" />
