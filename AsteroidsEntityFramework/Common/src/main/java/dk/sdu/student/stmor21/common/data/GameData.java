@@ -1,6 +1,6 @@
-package dk.sdu.mmmi.cbse.common.data;
+package dk.sdu.student.stmor21.common.data;
 
-import dk.sdu.mmmi.cbse.common.events.Event;
+import dk.sdu.student.stmor21.common.events.Event;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;

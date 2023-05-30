@@ -1,8 +1,8 @@
 package dk.sdu.sdtudent.stmor21.asteroids;
 
-import dk.sdu.mmmi.cbse.common.data.GameData;
-import dk.sdu.mmmi.cbse.common.data.World;
-import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
+import dk.sdu.student.stmor21.common.data.GameData;
+import dk.sdu.student.stmor21.common.data.World;
+import dk.sdu.student.stmor21.common.services.IGamePluginService;
 import dk.sdu.student.stmor21.asteroids.AsteroidPlugin;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

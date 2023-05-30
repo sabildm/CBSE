@@ -1,14 +1,9 @@
 package dk.sdu.student.stmor21.bullet;
 
-import dk.sdu.mmmi.cbse.common.data.Entity;
-import dk.sdu.mmmi.cbse.common.data.GameData;
-import dk.sdu.mmmi.cbse.common.data.World;
-import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
-import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
-import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
-import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
-import dk.sdu.student.stmor21.commonBullet.Bullet;
-import dk.sdu.student.stmor21.commonBullet.BulletSPI;
+import dk.sdu.student.stmor21.common.data.Entity;
+import dk.sdu.student.stmor21.common.data.GameData;
+import dk.sdu.student.stmor21.common.data.World;
+import dk.sdu.student.stmor21.common.services.IGamePluginService;
 
 public class BulletPlugin implements IGamePluginService {
     private Entity bullet;

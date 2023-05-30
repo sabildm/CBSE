@@ -1,10 +1,10 @@
 package dk.sdu.student.stmor21.collisionDetection;
-import dk.sdu.mmmi.cbse.common.data.Entity;
-import dk.sdu.mmmi.cbse.common.data.GameData;
-import dk.sdu.mmmi.cbse.common.data.World;
-import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
-import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
-import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
+import dk.sdu.student.stmor21.common.data.Entity;
+import dk.sdu.student.stmor21.common.data.GameData;
+import dk.sdu.student.stmor21.common.data.World;
+import dk.sdu.student.stmor21.common.data.entityparts.LifePart;
+import dk.sdu.student.stmor21.common.data.entityparts.PositionPart;
+import dk.sdu.student.stmor21.common.services.IPostEntityProcessingService;
 
 public class CollisionDetection implements IPostEntityProcessingService{
     @Override

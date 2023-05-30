@@ -1,6 +1,7 @@
-package dk.sdu.mmmi.cbse.common.events;
+package dk.sdu.student.stmor21.common.events;
 
-import dk.sdu.mmmi.cbse.common.data.Entity;
+import dk.sdu.student.stmor21.common.data.Entity;
+
 import java.io.Serializable;
 
 /**

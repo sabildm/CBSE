@@ -1,17 +1,17 @@
-package dk.sdu.mmmi.cbse.main;
+package dk.sdu.student.stmor21.core.main;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import dk.sdu.mmmi.cbse.common.data.Entity;
-import dk.sdu.mmmi.cbse.common.data.GameData;
-import dk.sdu.mmmi.cbse.common.data.World;
-import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
-import dk.sdu.mmmi.cbse.common.services.IGamePluginService;
-import dk.sdu.mmmi.cbse.common.services.IPostEntityProcessingService;
-import dk.sdu.mmmi.cbse.managers.GameInputProcessor;
+import dk.sdu.student.stmor21.common.data.Entity;
+import dk.sdu.student.stmor21.common.data.GameData;
+import dk.sdu.student.stmor21.common.data.World;
+import dk.sdu.student.stmor21.common.services.IEntityProcessingService;
+import dk.sdu.student.stmor21.common.services.IGamePluginService;
+import dk.sdu.student.stmor21.common.services.IPostEntityProcessingService;
+import dk.sdu.student.stmor21.core.managers.GameInputProcessor;
 import dk.sdu.student.stmor21.playersystem.PlayerControlSystem;
 import dk.sdu.student.stmor21.playersystem.PlayerPlugin;
 import dk.sdu.student.stmor21.asteroids.AsteroidControlSystem;

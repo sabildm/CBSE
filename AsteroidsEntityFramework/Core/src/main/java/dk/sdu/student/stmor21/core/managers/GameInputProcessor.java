@@ -1,9 +1,9 @@
-package dk.sdu.mmmi.cbse.managers;
+package dk.sdu.student.stmor21.core.managers;
 
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputAdapter;
-import dk.sdu.mmmi.cbse.common.data.GameData;
-import dk.sdu.mmmi.cbse.common.data.GameKeys;
+import dk.sdu.student.stmor21.common.data.GameData;
+import dk.sdu.student.stmor21.common.data.GameKeys;
 
 public class GameInputProcessor extends InputAdapter {
 

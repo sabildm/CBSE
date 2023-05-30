@@ -1,4 +1,6 @@
-package dk.sdu.mmmi.cbse.common.data;
+package dk.sdu.student.stmor21.common.data;
+
+import dk.sdu.student.stmor21.common.data.Entity;
 
 import java.util.ArrayList;
 import java.util.Collection;

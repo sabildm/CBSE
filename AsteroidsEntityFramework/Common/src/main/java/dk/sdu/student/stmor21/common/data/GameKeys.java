@@ -1,4 +1,4 @@
-package dk.sdu.mmmi.cbse.common.data;
+package dk.sdu.student.stmor21.common.data;
 
 public class GameKeys {
 

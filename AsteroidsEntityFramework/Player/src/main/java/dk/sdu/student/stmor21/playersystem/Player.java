@@ -1,7 +1,6 @@
 package dk.sdu.student.stmor21.playersystem;
 
-import dk.sdu.mmmi.cbse.common.data.Entity;
-import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
+import dk.sdu.student.stmor21.common.data.Entity;
 
 /**
  *
