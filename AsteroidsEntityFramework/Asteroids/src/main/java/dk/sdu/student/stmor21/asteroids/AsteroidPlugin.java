@@ -21,6 +21,9 @@ public class AsteroidPlugin implements IGamePluginService {
         Random rand = new Random();
         int random = rand.nextInt(4);
 
+        asteroid = createAsteroid(gameData,20);
+        world.addEntity(asteroid);
+
         for (int i = 0; i < random; i++) {
             // Add entities to the world
             asteroid = createAsteroid(gameData,20);
