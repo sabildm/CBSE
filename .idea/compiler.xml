@@ -7,7 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Player (1)" />
+        <module name="CommonBullet" />
         <module name="AsteroidsLibGDX" />
+        <module name="CollisionDetection" />
         <module name="Core (1) (dk.sdu.mmmi.cbse)" />
         <module name="Enemy (1)" />
         <module name="Asteroids" />
@@ -34,13 +36,14 @@
       <module name="Collision" target="1.9" />
       <module name="Collision (1)" target="1.9" />
       <module name="Collision (2)" target="1.5" />
+      <module name="CollisionDetection" target="17" />
       <module name="Common" target="1.9" />
       <module name="common" target="1.9" />
       <module name="Common (1)" target="11" />
       <module name="Common (2)" target="1.5" />
       <module name="CommonAsteroids" target="1.9" />
       <module name="CommonAsteroids (1)" target="1.5" />
-      <module name="CommonBullet" target="1.9" />
+      <module name="CommonBullet" target="17" />
       <module name="CommonBullet (1)" target="1.5" />
       <module name="CommonEnemy" target="1.9" />
       <module name="CommonEnemy (1)" target="1.5" />

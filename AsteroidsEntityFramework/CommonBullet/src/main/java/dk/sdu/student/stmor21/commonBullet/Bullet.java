@@ -1,4 +1,4 @@
-package dk.sdu.student.stmor21.bullet;
+package dk.sdu.student.stmor21.commonBullet;
 
 import dk.sdu.mmmi.cbse.common.data.Entity;
 

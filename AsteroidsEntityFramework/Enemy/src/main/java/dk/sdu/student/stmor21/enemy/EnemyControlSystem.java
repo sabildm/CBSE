@@ -3,16 +3,14 @@ package dk.sdu.student.stmor21.enemy;
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.GameData;
 import dk.sdu.mmmi.cbse.common.data.World;
+import dk.sdu.mmmi.cbse.common.data.entityparts.LifePart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.MovingPart;
 import dk.sdu.mmmi.cbse.common.data.entityparts.PositionPart;
 import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
-import dk.sdu.student.stmor21.bullet.Bullet;
 import dk.sdu.student.stmor21.bullet.BulletControlSystem;
 import dk.sdu.student.stmor21.bullet.BulletPlugin;
 
 import java.util.Random;
-
-import static dk.sdu.mmmi.cbse.common.data.GameKeys.*;
 
 public class EnemyControlSystem implements IEntityProcessingService {
     @Override
@@ -21,6 +19,7 @@ public class EnemyControlSystem implements IEntityProcessingService {
         for (Entity enemy : world.getEntities(Enemy.class)) {
             PositionPart positionPart = enemy.getPart(PositionPart.class);
             MovingPart movingPart = enemy.getPart(MovingPart.class);
+            LifePart lifePart = enemy.getPart(LifePart.class);
 
 
             Random rand = new Random();
@@ -30,7 +29,7 @@ public class EnemyControlSystem implements IEntityProcessingService {
                 movingPart.setUp(true);
                 movingPart.setRight(false);
                 movingPart.setLeft(false);
-                BulletPlugin bullet = new BulletPlugin();
+                BulletControlSystem bullet = new BulletControlSystem();
                 world.addEntity(bullet.createBullet(enemy,gameData));
             } else if (random == 1) {
                 movingPart.setUp(false);
@@ -44,6 +43,11 @@ public class EnemyControlSystem implements IEntityProcessingService {
 
             movingPart.process(gameData, enemy);
             positionPart.process(gameData, enemy);
+            lifePart.process(gameData, enemy);
+
+            if(lifePart.getLife() <= lifePart.getExpiration()){
+                world.removeEntity(enemy);
+            }
 
             updateShape(enemy);
         }

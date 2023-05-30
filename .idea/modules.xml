@@ -7,7 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/AsteroidsLibGDX/AsteroidsLibGDX.iml" filepath="$PROJECT_DIR$/AsteroidsLibGDX/AsteroidsLibGDX.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Bullet/Bullet.iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Bullet/Bullet.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CBSE.iml" filepath="$PROJECT_DIR$/.idea/CBSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/CollisionDetection/CollisionDetection.iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/CollisionDetection/CollisionDetection.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Common/Common (1).iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Common/Common (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/CommonBullet/CommonBullet.iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/CommonBullet/CommonBullet.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Core/Core (1) (dk.sdu.mmmi.cbse).iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Core/Core (1) (dk.sdu.mmmi.cbse).iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Enemy/Enemy (1).iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Enemy/Enemy (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/AsteroidsEntityFramework/Player/Player (1).iml" filepath="$PROJECT_DIR$/AsteroidsEntityFramework/Player/Player (1).iml" />
