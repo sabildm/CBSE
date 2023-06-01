@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Asteroids/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Asteroids/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/AsteroidsGame/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/AsteroidsGame/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Bullet/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/Bullet/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AsteroidsEntityFramework/CollisionDetection/src/main/java" charset="UTF-8" />

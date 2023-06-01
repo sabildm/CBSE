@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Bullet" />
         <module name="CollisionDetection" />
+        <module name="Bullet" />
         <module name="Player" />
         <module name="CommonEnemy" />
         <module name="Player (1)" />
@@ -30,10 +30,12 @@
       <module name="Asteroid" target="1.9" />
       <module name="Asteroid (1)" target="1.9" />
       <module name="Asteroid (2)" target="1.5" />
+      <module name="Asteroid1" target="17" />
       <module name="Asteroids" target="17" />
       <module name="asteroids.java9" target="1.9" />
       <module name="asteroids.serviceloader" target="1.9" />
       <module name="AsteroidsEntityFramework" target="11" />
+      <module name="AsteroidsGame" target="17" />
       <module name="AsteroidsLibGDX" target="11" />
       <module name="AsteroidsNetbeansModules-app" target="1.5" />
       <module name="AsteroidsNetbeansModules-branding" target="1.5" />
@@ -43,11 +45,13 @@
       <module name="Collision" target="1.9" />
       <module name="Collision (1)" target="1.9" />
       <module name="Collision (2)" target="1.5" />
+      <module name="Collision1" target="17" />
       <module name="CollisionDetection" target="17" />
       <module name="Common" target="11" />
       <module name="common" target="1.9" />
       <module name="Common (1)" target="11" />
       <module name="Common (2)" target="1.5" />
+      <module name="Common1" target="17" />
       <module name="CommonAsteroids" target="17" />
       <module name="CommonAsteroids (1)" target="1.5" />
       <module name="CommonBullet" target="17" />
@@ -60,6 +64,7 @@
       <module name="Core (1)" target="11" />
       <module name="Core (1) (dk.sdu.mmmi.cbse)" target="11" />
       <module name="Core (2) (dk.sdu.mmmi.cbse)" target="1.5" />
+      <module name="Core1" target="17" />
       <module name="DictionaryDemo" target="1.8" />
       <module name="DictionaryServiceProvider" target="1.8" />
       <module name="Enemy" target="11" />
@@ -86,6 +91,7 @@
       <module name="player" target="1.9" />
       <module name="Player (1)" target="11" />
       <module name="Player (2)" target="1.5" />
+      <module name="Player1" target="17" />
       <module name="provision" target="1.8" />
       <module name="ServiceLoaderExample" target="1.5" />
       <module name="shared-plugin-settings" target="1.8" />

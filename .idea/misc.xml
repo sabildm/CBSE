@@ -12,7 +12,18 @@
         <option value="$PROJECT_DIR$/AsteroidsServiceLoader/pom.xml" />
         <option value="$PROJECT_DIR$/AsteroidsEntityFramework/pom.xml" />
         <option value="$PROJECT_DIR$/AsteroidsNetbeansModules/pom.xml" />
+        <option value="$PROJECT_DIR$/AsteroidsGame/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/AsteroidsEntityFramework/AsteroidsGame/pom.xml" />
+        <option value="$PROJECT_DIR$/AsteroidsGame/Asteroid1/pom.xml" />
+        <option value="$PROJECT_DIR$/AsteroidsGame/Collision1/pom.xml" />
+        <option value="$PROJECT_DIR$/AsteroidsGame/Common1/pom.xml" />
+        <option value="$PROJECT_DIR$/AsteroidsGame/Core1/pom.xml" />
+        <option value="$PROJECT_DIR$/AsteroidsGame/Player1/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK" />
