@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class AsteroidControlSystem {
+public class AsteroidControlSystemTest {
     private GameData gameData;
     private World world;
     private IGamePluginService asteroidPlugin;
@@ -32,3 +32,6 @@ public class AsteroidControlSystem {
         assertTrue(world.getEntities().stream().collect(Collectors.toList()).toArray().length>=0);
     }
 }
+
+
+
