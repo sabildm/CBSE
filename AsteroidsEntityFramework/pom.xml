@@ -14,6 +14,9 @@
         <module>Asteroids</module>
         <module>CollisionDetection</module>
         <module>CommonBullet</module>
+        <module>CommonAsteroids</module>
+        <module>CommonEnemy</module>
+        <module>CommonPlayer</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

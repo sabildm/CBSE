@@ -4,6 +4,7 @@ import dk.sdu.student.stmor21.common.data.Entity;
 import dk.sdu.student.stmor21.common.data.GameData;
 import dk.sdu.student.stmor21.common.data.World;
 import dk.sdu.student.stmor21.common.services.IGamePluginService;
+import dk.sdu.student.stmor21.commonBullet.Bullet;
 
 public class BulletPlugin implements IGamePluginService {
     private Entity bullet;
@@ -19,7 +20,11 @@ public class BulletPlugin implements IGamePluginService {
 
     @Override
     public void stop(GameData gameData, World world) {
-        // Remove entities
-        world.removeEntity(bullet);
+        for (Entity bullet : world.getEntities()){
+            if (bullet.getClass() == Bullet.class){
+                // Remove entities
+                world.removeEntity(bullet);
+            }
+        }
     }
 }

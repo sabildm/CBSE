@@ -8,6 +8,7 @@ import dk.sdu.student.stmor21.common.data.entityparts.MovingPart;
 import dk.sdu.student.stmor21.common.data.entityparts.PositionPart;
 import dk.sdu.student.stmor21.common.services.IEntityProcessingService;
 import dk.sdu.student.stmor21.bullet.BulletControlSystem;
+import dk.sdu.student.stmor21.commonEnemy.Enemy;
 
 import java.util.Random;
 

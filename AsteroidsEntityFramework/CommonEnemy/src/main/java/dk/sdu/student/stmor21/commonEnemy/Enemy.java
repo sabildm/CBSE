@@ -1,4 +1,4 @@
-package dk.sdu.student.stmor21.enemy;
+package dk.sdu.student.stmor21.commonEnemy;
 
 import dk.sdu.student.stmor21.common.data.Entity;
 

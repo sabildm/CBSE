@@ -119,8 +119,8 @@ public class Game
             float[] shapey = entity.getShapeY();
 
             for (int i = 0, j = shapex.length - 1;
-                    i < shapex.length;
-                    j = i++) {
+                 i < shapex.length;
+                 j = i++) {
 
                 sr.line(shapex[i], shapey[i], shapex[j], shapey[j]);
             }

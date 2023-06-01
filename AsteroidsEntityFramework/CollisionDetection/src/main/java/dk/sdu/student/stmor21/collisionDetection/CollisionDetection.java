@@ -24,6 +24,7 @@ public class CollisionDetection implements IPostEntityProcessingService{
                     if (entityLife.getLife() > 0) {
                         entityLife.setLife(entityLife.getLife() - 1);
                         entityLife.setIsHit(true);
+                        System.out.println("hit");
                         // if entity is out of life - remove
                         if (entityLife.getLife() <= 0) {
                             world.removeEntity(entity);
@@ -38,8 +39,8 @@ public class CollisionDetection implements IPostEntityProcessingService{
         PositionPart ent1 = entity1.getPart(PositionPart.class);
         PositionPart ent2 = entity2.getPart(PositionPart.class);
 
-        float dx = ent1.getX() - ent2.getX();
-        float dy = ent1.getY() - ent2.getY();
+        float dx = (float) ent1.getX() - (float) ent2.getX();
+        float dy = (float) ent1.getY() - (float) ent2.getY();
 
         float dist = (float) Math.sqrt(dx * dx + dy * dy);
 

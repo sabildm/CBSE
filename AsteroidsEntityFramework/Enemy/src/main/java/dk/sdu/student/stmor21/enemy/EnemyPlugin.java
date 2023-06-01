@@ -7,6 +7,7 @@ import dk.sdu.student.stmor21.common.data.entityparts.LifePart;
 import dk.sdu.student.stmor21.common.data.entityparts.MovingPart;
 import dk.sdu.student.stmor21.common.data.entityparts.PositionPart;
 import dk.sdu.student.stmor21.common.services.IGamePluginService;
+import dk.sdu.student.stmor21.commonEnemy.Enemy;
 
 public class EnemyPlugin implements IGamePluginService {
 

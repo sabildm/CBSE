@@ -7,21 +7,22 @@ import dk.sdu.student.stmor21.common.data.entityparts.LifePart;
 import dk.sdu.student.stmor21.common.data.entityparts.MovingPart;
 import dk.sdu.student.stmor21.common.data.entityparts.PositionPart;
 import dk.sdu.student.stmor21.common.services.IGamePluginService;
+import dk.sdu.student.stmor21.commonAsteroids.Asteroid;
 
 import java.util.Random;
 
 public class AsteroidPlugin implements IGamePluginService {
-    private Entity asteroid;
+    /*private Entity asteroid;
 
     public AsteroidPlugin() {
-    }
+    }*/
 
     @Override
     public void start(GameData gameData, World world) {
         Random rand = new Random();
         int random = rand.nextInt(4);
 
-        asteroid = createAsteroid(gameData,20);
+        Entity asteroid = createAsteroid(gameData,20);
         world.addEntity(asteroid);
 
         for (int i = 0; i < random; i++) {
@@ -82,6 +83,8 @@ public class AsteroidPlugin implements IGamePluginService {
     @Override
     public void stop(GameData gameData, World world) {
         // Remove entities
-        world.removeEntity(asteroid);
+        for (Entity asteroid : world.getEntities(Asteroid.class)) {
+            world.removeEntity(asteroid);
+        }
     }
 }

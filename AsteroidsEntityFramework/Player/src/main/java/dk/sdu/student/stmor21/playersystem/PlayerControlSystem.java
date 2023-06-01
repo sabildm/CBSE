@@ -2,23 +2,19 @@ package dk.sdu.student.stmor21.playersystem;
 
 import dk.sdu.student.stmor21.common.data.Entity;
 import dk.sdu.student.stmor21.common.data.GameData;
+import dk.sdu.student.stmor21.common.data.GameKeys;
 import dk.sdu.student.stmor21.common.data.World;
 import dk.sdu.student.stmor21.common.data.entityparts.LifePart;
 import dk.sdu.student.stmor21.common.data.entityparts.MovingPart;
 import dk.sdu.student.stmor21.common.data.entityparts.PositionPart;
 import dk.sdu.student.stmor21.common.services.IEntityProcessingService;
+import dk.sdu.student.stmor21.common.util.SPILocator;
 import dk.sdu.student.stmor21.commonBullet.BulletSPI;
-
-import java.util.Collection;
-import java.util.ServiceLoader;
+import dk.sdu.student.stmor21.commonPlayer.Player;
 
 import static dk.sdu.student.stmor21.common.data.GameKeys.*;
-import static java.util.stream.Collectors.toList;
 
-/**
- *
- * @author jcs
- */
+
 public class PlayerControlSystem implements IEntityProcessingService {
 
     @Override
@@ -33,15 +29,14 @@ public class PlayerControlSystem implements IEntityProcessingService {
             movingPart.setRight(gameData.getKeys().isDown(RIGHT));
             movingPart.setUp(gameData.getKeys().isDown(UP));
 
-            if(gameData.getKeys().isPressed(SPACE)){
-
-                for (BulletSPI bullet : getBulletSPIs()) {
+            if(gameData.getKeys().isDown(GameKeys.SPACE)){
+                for (BulletSPI bullet : SPILocator.locateAll(BulletSPI.class)) {
                     world.addEntity(bullet.createBullet(player, gameData));
                 }
 
             }
-            
-            
+
+
             movingPart.process(gameData, player);
             positionPart.process(gameData, player);
             lifePart.process(gameData,player);
@@ -76,10 +71,6 @@ public class PlayerControlSystem implements IEntityProcessingService {
 
         entity.setShapeX(shapex);
         entity.setShapeY(shapey);
-    }
-
-    private Collection<? extends BulletSPI> getBulletSPIs() {
-        return ServiceLoader.load(BulletSPI.class).stream().map(ServiceLoader.Provider::get).collect(toList());
     }
 
 }
