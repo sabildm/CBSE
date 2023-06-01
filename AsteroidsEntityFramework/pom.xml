@@ -17,7 +17,6 @@
         <module>CommonAsteroids</module>
         <module>CommonEnemy</module>
         <module>CommonPlayer</module>
-        <module>AsteroidsGame</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
